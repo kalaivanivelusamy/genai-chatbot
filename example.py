@@ -12,7 +12,7 @@
 import google.generativeai as genai
 import streamlit as st
 
-genai.configure(api_key="AIzaSyCt0nDBRDjV2dtZ7kLkRk3FzWLbwxd_NLw")
+genai.configure(api_key="YOUR_API_KEY_HERE")
 
 model = genai.GenerativeModel("gemini-2.5-flash")
 # Initialize conversation history
