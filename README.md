@@ -72,7 +72,4 @@ for m in models:
 
 MIT License
 
-License
-
-MIT License
 
