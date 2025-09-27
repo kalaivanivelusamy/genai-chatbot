@@ -29,7 +29,7 @@ if st.button("Send") and user_input:
     st.session_state.history.append({"role": "user", "parts": [user_input]})
 
     # Generate bot response
-    response = model.generate_content(user_input)
+    response = model.generate_content(st.session_state.history)
 
     # Add bot response with correct role
     st.session_state.history.append({"role": "model", "parts": [response.text]})
